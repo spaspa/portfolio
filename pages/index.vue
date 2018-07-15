@@ -4,8 +4,10 @@
     div.container
       h1 Portfolio
       div.links
-        router-link.link-item(to="/work") work
-        router-link.link-item(to="/about") about
+        div.link-item
+          router-link(to="/work") work
+        div.link-item
+          router-link(to="/about") about
 </template>
 
 <script>
@@ -42,7 +44,7 @@ h1
 
 .link-item
   font-size: 20pt
-  &:before, &:after
+  &:before
     content: ""
     position: absolute
     width: 40px
@@ -50,17 +52,16 @@ h1
     border-color: $primary
     border-style: solid
     border-width: 0
+  &:after
+    content: ""
+    position: absolute
+    width: 40px
+    height: 40px
+    border-color: $primary
+    border-style: solid
+    border-width: 0
+    margin-left: -40px
 
-    &:before
-      left: 0
-      bottom: 0
-      border-bottom-width: 1px
-      border-left-width: 1px
-    &:after
-      top: 0
-      right: 0
-      border-top-width: 1px
-      border-right-width: 1px
 
   &:hover
     &:before, &:after
@@ -71,7 +72,7 @@ h1
       border-bottom-width: 5px
       border-left-width: 5px
     &:after
-      transform: translate(5px, -15px) scale(1)
+      transform: translate(35px, -15px) scale(1)
       border-top-width: 5px
       border-right-width: 5px
 </style>
