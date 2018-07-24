@@ -2,6 +2,8 @@
   section
     TheHeader(:active="1")
     div.container
+      Box(src="/work/otakublocker.png"
+          href="https://otakublocker.spaspa.me")
       Box(src="/work/prism.png")
       Box(src="/work/prism_poster.png")
       Box(src="/work/palette.png")

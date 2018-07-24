@@ -1,12 +1,14 @@
 <template lang="pug">
 div.container
-  img(:src="src")
+  a(:href="href")
+    img(:src="src")
 </template>
 
 <script>
 export default {
   props: {
-    src: String
+    src: String,
+    href: String
   }
 }
 </script>
