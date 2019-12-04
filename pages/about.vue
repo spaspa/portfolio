@@ -7,19 +7,18 @@
         hr
       div.description
         h3 Name
-        p Yoya Mesaki
-        small (Spa, Eleven-Lines)
+        p spaspa
+        small (spa, Eleven-Lines)
       div.description
         h3 Belonging
         p Tokyo Institute of Technology
       div.description
         h3 Skills
-        p Python, Web Front-end(Vue.js)
+        p Web Front-end(Vue.js, React.js, TypeScript, ...)
         p Vector Graphics(Adobe Illustrator)
       div.description
         h3 Interest in
-        p Golang, Nim, UI design
-        p ML, NLP, Image Processing
+        p Type System, Design
 
 </template>
 
